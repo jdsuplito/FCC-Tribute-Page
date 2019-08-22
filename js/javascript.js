@@ -6,9 +6,9 @@ var portrait = {
 	currentBorderRotation: 0,
 	currentPortrait: 0,
 	portraitPictures: [
-		'../pictures/ada-1.png',
-		'../pictures/ada-2.png',
-		'../pictures/ada-3.png'
+		'./pictures/ada-1.png',
+		'./pictures/ada-2.png',
+		'./pictures/ada-3.png'
 	]
 }
 
