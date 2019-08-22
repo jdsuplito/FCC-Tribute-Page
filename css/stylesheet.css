@@ -1,0 +1,148 @@
+
+#main {
+  background: url('../pictures/black_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 100vh;
+  margin: auto;
+/*  border: 10px solid red;*/
+  box-sizing: border-box;
+}
+
+#title {
+/*  border: 10px solid green;*/
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-design {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  color: #E6BE8A;
+/*  border: 10px solid blue;*/
+}
+#img-div {
+/*  border: 10px solid yellow;*/
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image {
+  box-shadow: 0 0 20px 8px #CFB53B;
+  border: 10px solid #CFB53B;
+  border-radius: 50%;
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  transition: all 750ms;
+}
+
+#image-1 {
+/*  border: 10px solid orange;*/
+  animation: rotateCW 200s infinite linear forwards;
+  height: 500px;
+  position: absolute;
+  z-index: 2;
+  transition: all 750ms;
+  filter: drop-shadow(0px 0px 20px black);
+}
+
+#image-1:hover {
+  filter: drop-shadow(0px 0px 20px black) brightness(1.5);
+  animation-duration: 30s;
+}
+
+.arrowNext_right {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../pictures/arrow_right.png);
+    height: 150px;
+    position: relative;
+    right: -400px;
+    width: 150px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px black);
+    transition: all 750ms;
+}
+
+.arrowNext_right:hover {
+  filter: drop-shadow(1px 1px 20px black) brightness(1.5);
+}
+
+.arrowNext_left {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../pictures/arrow_left.png);
+    height: 150px;
+    position: relative;
+    left: -400px;
+    width: 150px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 3px black);
+    transition: all 750ms;
+}
+
+.arrowNext_left:hover {
+  filter: drop-shadow(1px 1px 20px black) brightness(1.5);
+}
+
+#img-caption {
+/*  border: 10px solid pink;*/
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tribute-link {
+/*  border: 10px solid violet;*/
+  font-family: sans-serif;
+  color: #fffbe6;
+  text-align: center;
+  font-size: 25px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+#tribute-info {
+/*  border: 10px solid lightgreen;*/
+  height: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tribute-quote {
+ /* border: 10px solid white;*/
+  font-family: 'Shadows Into Light', cursive;
+  color: #A9A9A9;
+  text-align: center;
+  font-size: 25px;
+}
+
+@keyframes rotateCW {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
