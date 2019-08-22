@@ -149,10 +149,10 @@ a:active {
 
 .tribute-quote {
  /* border: 10px solid white;*/
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Dancing Script', cursive;
   color: #A9A9A9;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 @keyframes rotateCW {
