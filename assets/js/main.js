@@ -1,7 +1,7 @@
 var thePortrait = {
     mainImage: document.querySelector('#image'),
     mainImageBorder: document.querySelector('#border'),
-    borderTransitionDurationMS: 2500,
+    borderTransitionDurationMS: 1000,
     borderTransitionRunning: false,
     borderRotateSFX: new Audio('assets/sfx/rotate-sound.mp3'),
     nextBtn: document.querySelector('#arrow-right'),

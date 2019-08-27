@@ -63,8 +63,9 @@
 }
 
 #image {
-	width: 100%;
+	max-width: 100%;
   border-radius: 50%;
+  position: relative;
   transition: all 750ms;
   border: 10px solid #c3a35c;
 	filter: drop-shadow( 0 0 15px #c3a35c);
@@ -110,6 +111,9 @@
   margin-top: 13vmin;
   margin-bottom: 3vmin;
   font-size: 1rem;
+  box-shadow: 0 0 10px black;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
 }
 
 #tribute-info {
@@ -131,7 +135,6 @@
   text-align: center;
   margin-bottom: 4vmin;
   font-size: 4vmin;
-  box-shadow: 0 0 25px black;
   font-family: 'Libre Caslon Display', serif;
 }
 
@@ -139,9 +142,11 @@
   /* border: 10px solid yellow; */
   color: #C8C8C8;
   font-family: serif;
-  font-size: 3vmin;
-  max-width: 84%;
+  font-size: 1.3rem;
+  max-width: 90%;
   margin: 0 auto;
+  display: inline-block;
+  padding-left: 13vmin;
 }
 
 .ada-quote {
@@ -159,7 +164,8 @@
   color: #C8C8C8;
   font-family: serif;
   text-align: center;
-  font-size: 3vmin;
+  font-size: 2.3vmin;
+  padding-bottom: 20px;
 }
 
 a:link {
