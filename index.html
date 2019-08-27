@@ -2,43 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Ada Lovelace Tribute Page</title>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+	<link rel="stylesheet" href="assets/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="./pictures/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-  <body id="main">
+<body id="main">
+	<div id="title">Ada Lovelace</div>
 
-		<div id="title">
-  		<p class="title-design">Ada Lovelace</p>
-  	</div>
-
-    	<div id="img-div">
-
-			<div id="image" title="Ada Lovelace's Portrait"></div>
-			<div id="image-1-container">
-				<img id="image-1" src="pictures/frame-4.png" alt="Circular Golden Frame">
+	<div id="img-div">
+		<div class="image-caption_container">
+			<img id="arrow-left" src="assets/images/arrow_left.png" alt="arrow left">
+			
+			<div class="image-container">
+				<img id="border" src="assets/images/frame-4.png" alt="Frame">
+				<img id="image" src="assets/images/ada-1.png" alt="Ada Lovelace portrait">
 			</div>
+			
+			<img id="arrow-right" src="assets/images/arrow_right.png" alt="arrow right">
 
-    		<div class="arrowNext_right"></div>
-    		<div class="arrowNext_left"></div>
+			<div id="img-caption">" The First Computer Programmers "</div>
+		</div>
+	</div>
 
-    	</div>
+	<div id="tribute-info">
+		<h3 class="tribute-info-title">- Career Info -</h3>
 
-      <div id="img-caption">
-    	<a id="tribute-link" href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank">
-    	' The First Computer Programmer ' <br>
-    	-- Ada Lovelace Life --
-    	</a>
-    	</div>
+		<div class="tribute-info-col">
+			<ul class="work-info_1">
+				<li>In 1833, Lovelace was introduced to Charles Babbage, also known as the "Father of Computers", by her tutor, Mary Somerville. Since then a professional friendship between the young woman and Babbage ensued, and Ada became interested in the latter's 'Difference Engine.</li>
+				<br>
+				<li>In the year 1840, Babbage's lecture on his invention, the 'Analytical Engine', delivered at the 'University of Turin', was written in French by Italian, Luigi Menabrea. This paper was printed two years later, in the 'Bibliothèque universelle de Genève'.</li>
+				<br>
+				<li>After the publication, Lovelace took it upon herself to translate Luigi's French paper into English, after a request from Babbage's acquaintance, Charles Wheatstone. The paper was transcribed during 1842-43, and as an addition, the young lady included notes of her own analysis.</li>
+				<br>
+				<li>In 1844, she ventured on to design a model that would use mathematics to decode the neurological process involved behind the evolution of feelings, calling this "a calculus of the nervous system".</li>
+				<br>
+				<li>In 1844, Lovelace also went on to review a research publication on Animal Magnetism, written by Baron Karl von Reichenbach, but her work was never published.</li>
+				<br>
+				<li>Ada Lovelace was a brilliant mathematician, known mainly for the assistance she provided to Charles Babbage on his ‘Differential Engine’ and ‘Analytical Engine’. She wrote the world’s earliest algorithm for the ‘Analytical Engine’, which allowed the machine to calculate 'Bernoulli numbers'.</li>
+			</ul>
+		</div>
 
-    	<div id="tribute-info">
-    		<p class="tribute-quote">
-    			<br>" Mathematical science shows what is. <br> It is the language of unseen relations between things. <br> But to use and apply that language, we must be able to fully appreciate, to feel, to seize the unseen, the unconscious. " <br>
-    			- Ada Lovelace
-    		</p>
-    	</div>
-		  <script src="./js/javascript.js"></script>
-  </body>
+		<div class="tribute-info-col">
+			<p class="ada-quote">" Mathematical science shows what is. <br> It is the language of unseen relations between things. <br> But to use and apply that language, we must be able to fully appreciate, to feel, to seize the unseen, the unconscious. " <br>
+			- Ada Lovelace
+			</p>
+	
+			<p class="more-link">To know more about Ada Lovelace, Just click 
+					<a id="tribute-link" href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank">Here</a>
+			</p>
+		</div>
+	</div>
+
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
 </html>
