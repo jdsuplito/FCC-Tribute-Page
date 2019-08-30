@@ -33,6 +33,7 @@
 	max-width: 100%;
   height: auto;
   margin-top: 11vmin;
+  position: relative;
 }
 
 .image-caption_container {
@@ -63,9 +64,8 @@
 }
 
 #image {
-	max-width: 100%;
+	width: 100%;
   border-radius: 50%;
-  position: relative;
   transition: all 750ms;
   border: 10px solid #c3a35c;
 	filter: drop-shadow( 0 0 15px #c3a35c);
