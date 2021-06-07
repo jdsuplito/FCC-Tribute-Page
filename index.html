@@ -4,62 +4,102 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title>Ada Lovelace Tribute Page</title>
-	<link rel="stylesheet" href="assets/css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<title>FCC-Tribute-Page</title>
+	<link rel="stylesheet" href="./FCC-TPAssets/FCC-TPMainCss/main.css">
+	<link rel="shortcut icon" href="./FCC-TPAssets/FCC-TPMedia/favicon.ico" type="image/x-icon">
 </head>
-<body id="main">
-	<div id="title">Ada Lovelace</div>
-
-	<div id="img-div">
-		<div class="image-caption_container">
-			<img id="arrow-left" src="assets/images/arrow_left.png" alt="arrow left">
-			
-			<div class="image-container">
-				<img id="border" src="assets/images/frame-4.png" alt="Frame">
-				<img id="image" src="assets/images/ada-1.png" alt="Ada Lovelace portrait">
-			</div>
-			
-			<img id="arrow-right" src="assets/images/arrow_right.png" alt="arrow right">
-
-			<div id="img-caption">" The First Computer Programmers "</div>
-		</div>
-	</div>
-
-	<div id="tribute-info">
-		<h3 class="tribute-info-title">- Career Info -</h3>
-
-		<div class="tribute-info-col">
-			<ul class="work-info_1">
-				<li>In 1833, Lovelace was introduced to Charles Babbage, also known as the "Father of Computers", by her tutor, Mary Somerville. Since then a professional friendship between the young woman and Babbage ensued, and Ada became interested in the latter's 'Difference Engine.</li>
-				<br>
-				<li>In the year 1840, Babbage's lecture on his invention, the 'Analytical Engine', delivered at the 'University of Turin', was written in French by Italian, Luigi Menabrea. This paper was printed two years later, in the 'Bibliothèque universelle de Genève'.</li>
-				<br>
-				<li>After the publication, Lovelace took it upon herself to translate Luigi's French paper into English, after a request from Babbage's acquaintance, Charles Wheatstone. The paper was transcribed during 1842-43, and as an addition, the young lady included notes of her own analysis.</li>
-				<br>
-				<li>In 1844, she ventured on to design a model that would use mathematics to decode the neurological process involved behind the evolution of feelings, calling this "a calculus of the nervous system".</li>
-				<br>
-				<li>In 1844, Lovelace also went on to review a research publication on Animal Magnetism, written by Baron Karl von Reichenbach, but her work was never published.</li>
-				<br>
-				<li>Ada Lovelace was a brilliant mathematician, known mainly for the assistance she provided to Charles Babbage on his ‘Differential Engine’ and ‘Analytical Engine’. She wrote the world’s earliest algorithm for the ‘Analytical Engine’, which allowed the machine to calculate 'Bernoulli numbers'.</li>
-			</ul>
-		</div>
-
-		<div class="tribute-info-col">
-			<p class="ada-quote">" Mathematical science shows what is. <br> It is the language of unseen relations between things. <br> But to use and apply that language, we must be able to fully appreciate, to feel, to seize the unseen, the unconscious. " <br>
-			- Ada Lovelace
-			</p>
+<body>
 	
-			<p class="more-link">To know more about Ada Lovelace, Just click 
-					<a id="tribute-link" href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank">Here</a>
-			</p>
+	<div id="main">
+
+		<a href="https://prod.liveshare.vsengsaas.visualstudio.com/join?6BCC93942CB9E67DC62E074173E0794BBA88" class="href"></a>
+		<header class="header">
+			<h2 class="head-logo">FCC-TP</h2>
+			<h1 id="title">Ada Lovelace</h1>
+			<h3 class="btn"><a class="btn-link" href="">ABOUT</a></h3>
+		</header>
+
+		<figure id="img-div">
+			<div class="image-caption_container">
+				<div class="arrow-left-con">
+					<img id="arrow-left" src="./FCC-TPAssets/FCC-TPMedia/arrow_left.png" alt="arrow left">
+				</div>
+				<div class="image-container">
+					<img id="border" src="./FCC-TPAssets/FCC-TPMedia/frame-5.png" alt="Frame">
+					<img id="image" src="./FCC-TPAssets/FCC-TPMedia/ada-1.png" alt="Ada Lovelace portrait">
+				</div>
+				<div class="arrow-right-con">
+					<img id="arrow-right" src="./FCC-TPAssets/FCC-TPMedia/arrow_right.png" alt="arrow right">
+				</div>
+			</div>
+			<div class="caption">
+				<h3 id="img-caption">" The First Computer Programmers "</h3>
+				<hr>
+				<h6>The Right Honourable</h6>
+			</div>
+		</figure>
+		
+		<div id="tribute-info">
+			<h1 class="tribute-info-title">Biography</h1>
+			<div class="fieldsets">
+				<div class="details-fields">
+					<fieldset class="fields">
+						<legend>EDUCATION</legend>
+						<p>Analyst (& Metaphysician), Numbers of Bernoulli, Differential Calculus</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>NAME</legend>
+						<p>Ada Lovelace</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>SPOUSE</legend>
+						<p>William King-Noel, 1st Earl of Lovelace</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>OCCUPATION</legend>
+						<p>Mathematician, Software Developer, Writer, Computer Scientist</p>
+					</fieldset>
+				</div>
+				<div class="details-fields">
+					<fieldset class="fields">
+						<legend>BIRTH DATE</legend>
+						<p>December 10, 1815</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>PLACE OF BIRTH</legend>
+						<p>London, United Kingdom</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>DEATH DATE</legend>
+						<p>November 27, 1852</p>
+					</fieldset>
+					<fieldset class="fields">
+						<legend>PLACE OF DEATH</legend>
+						<p>Marylebone, London, United Kingdom</p>
+					</fieldset>
+				</div>
+			</div>
+
+			<div class="infos">
+				<h2 class="infos-head">The Countess of Lovelace</h2>
+				<p class="tribute-info-p">Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first computer programmer. The young girl was brought up by her maternal grandmother and servants. Her grandmother died when Ada was just seven years old, and Ada herself suffered long spells of poor health in both childhood and later. One thing her mother insisted upon was that Ada should get a high quality education. She developed the design for a flying machine when she was only 13 years old. She was educated by tutors, including Mary Somerville, for whom she had a great amount of respect and with whom she corresponded many years. Mary Somerville was the one who introduced her to Charles Babbage.</p>
+				<p class="tribute-info-p"> Ada Lovelace discovered that a computer could follow a sequence of instructions—that is, a program. About a century before Konrad Zuse designed the first programmable computing machine, in the 1840s, Ada Lovelace wrote the first computer programme in the world. From a modern perspective, her work is visionary. She also added thousands of words of her own notes to the paper. Lovelace realized that the Analytical Engine could carry out an extensive sequence of mathematical operations. The example she wrote of one such sequence—how to calculate Bernoulli numbers—is regarded by computer historians as the first computer program.</p>
+				<p class="tribute-info-p">In 1835, Lovelace married William King, who became the Earl of Lovelace three years later. She then took the title of Countess of Lovelace. They shared a love of horses and had three children together. From most accounts, he supported his wife's academic endeavors. Lovelace and her husband socialized with many of the interesting minds of the times, including scientist Michael Faraday and writer Charles Dickens.</p>
+				<p class="tribute-info-p">Lovelace's health suffered, however, after a bout of cholera in 1837. She had lingering problems with asthma and her digestive system. Doctors gave her painkillers, such as laudanum and opium, and her personality began to change. She reportedly experienced mood swings and hallucinations.</p>
+			</div>
+
+			<div class="tribute-info-col">
+				<h2 class="ada-quote">“The more I study, the more insatiable do I feel my genius for it to be.”</h2>
+				<h2 class="signature">Ada Lovelace,</h2>
+				<img src="./FCC-TPAssets/FCC-TPMedia/signature.png" alt="" class="signature-img">
+				<p class="more-link">To know more about Ada Lovelace, Just click 
+					<a id="tribute-link" href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank"> Here.</a>
+				</p>
+			</div>
 		</div>
 	</div>
-
-	<script src="assets/js/main.js"></script>
+	
+	<script src="./FCC-TPAssets/FCC-TPMainJS/main.js"></script>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

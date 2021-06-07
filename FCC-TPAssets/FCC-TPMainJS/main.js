@@ -3,14 +3,14 @@ var thePortrait = {
     mainImageBorder: document.querySelector('#border'),
     borderTransitionDurationMS: 2500,
     borderTransitionRunning: false,
-    borderRotateSFX: new Audio('assets/sfx/rotate-sound.mp3'),
+    borderRotateSFX: new Audio('../FCC-TPAssets/FCC-TPSfx/rotate-sound.mp3'),
     nextBtn: document.querySelector('#arrow-right'),
     previousBtn: document.querySelector('#arrow-left'),
     currentPortrait: 0,
     portraitPictures: [
-        'assets/images/ada-1.png',
-        'assets/images/ada-2.png',
-        'assets/images/ada-3.png'
+        '../FCC-TPAssets/FCC-TPMedia/ada-1.png',
+        '../FCC-TPAssets/FCC-TPMedia/ada-2.png',
+        '../FCC-TPAssets/FCC-TPMedia/ada-3.png'
     ],
     switchImage: function (e) {
         if (this.borderTransitionRunning === false) {
