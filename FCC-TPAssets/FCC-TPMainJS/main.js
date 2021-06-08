@@ -8,9 +8,9 @@ var thePortrait = {
     previousBtn: document.querySelector('#arrow-left'),
     currentPortrait: 0,
     portraitPictures: [
-        '../FCC-TPAssets/FCC-TPMedia/ada-1.png',
-        '../FCC-TPAssets/FCC-TPMedia/ada-2.png',
-        '../FCC-TPAssets/FCC-TPMedia/ada-3.png'
+        './FCC-TPAssets/FCC-TPMedia/ada-1.png',
+        './FCC-TPAssets/FCC-TPMedia/ada-2.png',
+        './FCC-TPAssets/FCC-TPMedia/ada-3.png'
     ],
     switchImage: function (e) {
         if (this.borderTransitionRunning === false) {
