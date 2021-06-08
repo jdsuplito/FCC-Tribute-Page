@@ -3,7 +3,7 @@ var thePortrait = {
     mainImageBorder: document.querySelector('#border'),
     borderTransitionDurationMS: 2500,
     borderTransitionRunning: false,
-    borderRotateSFX: new Audio('../FCC-TPAssets/FCC-TPSfx/rotate-sound.mp3'),
+    borderRotateSFX: new Audio('./FCC-TPAssets/FCC-TPSfx/rotate-sound.mp3'),
     nextBtn: document.querySelector('#arrow-right'),
     previousBtn: document.querySelector('#arrow-left'),
     currentPortrait: 0,
