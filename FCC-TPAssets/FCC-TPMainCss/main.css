@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
+:root {
+  font-size: 16px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,14 +39,14 @@ body {
 
 .head-logo {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: #83580b;
   text-shadow: 1px 1px #000000;
 }
 
 #title {
   font-family: 'Mate SC', serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #83580b;
   text-shadow: 1px 1px #000000;
 }
@@ -53,7 +57,7 @@ body {
 
 .btn-link {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #83580b;
   text-shadow: 1px 1px #000000;
   text-decoration: none;
@@ -62,28 +66,6 @@ body {
 .btn-link:hover {
   color: #e79d12;
 }
-
-
-/* HEADER MEDIA QUERY */
-@media screen and (max-width: 700px) {
-  
-  .header {
-    padding: 10px 10px;
-  }
-
-  .head-logo {
-    font-size: 1em;
-  }
-
-  #title {
-    font-size: 1.8em;
-  }
-
-  .btn-link {
-    font-size: 0.8em;
-  }
-}
-
 
 /* FIGURE IMAGES */
 #img-div {
@@ -164,35 +146,6 @@ body {
 }
 
 
-/* IMAGES MEDIA QUERY */
-@media screen and (max-width: 700px){
-  
-  #img-div {
-    margin-top: 50px;
-  }
-
-  #arrow-left, #arrow-right {
-    width: 50%;
-  }
-
-  #arrow-left {
-    float: left;
-  }
-
-  #arrow-right {
-    float: right;
-  }
-
-  #border {
-    max-width: 160%;
-  }
-
-  #image {
-    max-width: 100%;
-  }
-}
-
-
 /* CAPTION */
 .caption {
   width: 100%;
@@ -203,25 +156,11 @@ body {
   text-align: center;
   color: #828282;
 }
+
 #img-caption {
   font-family: 'Roboto Slab', serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
-
-/* CAPTION  MEDIA QUERY */
-@media screen and (max-width: 700px) {
-
-  .caption {
-    padding: 10px 10px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-  }
-
-  #img-caption {
-    font-size: 0.8em;
-  }
-}
-
 
 /* INFORMATIONS */
 #tribute-info {
@@ -302,49 +241,6 @@ body {
   font-weight: bold;
 }
 
-/* INFORMATIONS */
-@media screen and (max-width: 700px) {
-
-  #tribute-info {
-    padding: 10px;
-  }
-
-  .tribute-info-title {
-    font-size: 1.5em;
-  }
-
-  .tribute-info-p {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-
-  .fieldsets {
-    margin-bottom: 20px;
-  }
-
-  .details-fields {
-    margin: 0;
-    flex-direction: column;
-  }
-
-  .fields {
-    padding: 5px 0;
-  }
-
-  .signature-img {
-    width: 300px;
-  }
-
-  .infos-head {
-    font-size: 1.2em;
-    margin-bottom: 0;
-  }
-
-  .ada-quote, .signature {
-    font-size: 1em;
-  }
-}
-
 @keyframes rotateBorderCW {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
@@ -360,5 +256,186 @@ body {
   }
   100%{
     transform:  translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+/*  Tablets in landscape mode, older desktop monitors */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .fields {
+    height: 100px;
+    padding: 5px;
+  }
+}
+
+/*  Tablets in portrait mode, large display smartphones landscape mode */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .fields {
+    height: 100px;
+    padding: 5px;
+  }
+
+  .ada-quote {
+    margin-bottom: 50px;
+  }
+
+  .signature-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*  Smartphones in landscape mode */
+@media screen and (min-width: 421px) and (max-width: 767px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .header {
+    padding: 5px 15px;
+  }
+
+  #img-div {
+    padding: 0;
+    margin-top: 80px;
+  }
+
+  .caption {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 10px 20px;
+  }
+
+  #tribute-info {
+    padding: 0;
+  }
+
+  .tribute-info-title, .infos-head {
+    margin-bottom: 0px;
+    padding: 15px 0;
+  }
+
+  .fieldsets {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .details-fields {
+    margin: 0;
+  }
+
+  .fields {
+    width: 25%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .infos, .tribute-info-col {
+    padding: 0 25px;
+    margin-bottom: 0px;
+  }
+
+  .tribute-info-p {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .ada-quote {
+    margin-bottom: 30px;
+  }
+
+  .signature-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-link {
+    margin-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+/*  Smartphones in portrait mode  */
+@media screen and (max-width: 420px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .header {
+    padding: 5px 10px;
+  }
+
+  #img-div {
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  .caption {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding: 10px 20px;
+  }
+
+  #tribute-info {
+    padding: 0px;
+  }
+
+  .tribute-info-title, .infos-head {
+    margin-bottom: 0px;
+    padding: 10px 0;
+  }
+
+  .fieldsets {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .details-fields {
+    margin: 0;
+  }
+
+  .fields {
+    padding: 2px;
+    width: 25%;
+    height: 80px;
+    margin: 10px 0;
+  }
+
+  .infos, .tribute-info-col {
+    padding: 0 25px;
+    margin-bottom: 0px;
+  }
+
+  .tribute-info-p {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .ada-quote {
+    margin-bottom: 25px;
+  }
+
+  .signature-img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .more-link {
+    margin-top: 15px;
+    padding-bottom: 20px;
   }
 }
