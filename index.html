@@ -1,104 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"> -->
+	<!-- bootstrap meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>FCC-Tribute-Page</title>
-	<link rel="stylesheet" href="./FCC-TPAssets/FCC-TPMainCss/main.css">
+	<!-- bootstrap css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 	<link rel="shortcut icon" href="./FCC-TPAssets/FCC-TPMedia/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-	
-	<div id="main">
 
-		<header class="header">
-			<h2 class="head-logo">FCC-TP</h2>
-			<h1 id="title">Ada Lovelace</h1>
-			<h3 class="btn"><a class="btn-link" href="">ABOUT</a></h3>
-		</header>
+	<div id="container-fluid">
 
-		<figure id="img-div">
-			<div class="image-caption_container">
-				<div class="arrow-left-con">
-					<img id="arrow-left" src="./FCC-TPAssets/FCC-TPMedia/arrow_left.png" alt="arrow left">
+		<nav class="navbar navbar-expand-lg py-3 bg-dark shadow-sm sticky-top">
+			<div
+				class="container-fluid justify-lg-content-center text-white justify-content-between align-items-center text-lg-center">
+				<div class="col col-lg-4">
+					<a class="navbar-brand m-0 text-white" href="#">FCC-TP</a>
 				</div>
-				<div class="image-container">
-					<img id="border" src="./FCC-TPAssets/FCC-TPMedia/frame-5.png" alt="Frame">
-					<img id="image" src="./FCC-TPAssets/FCC-TPMedia/ada-1.png" alt="Ada Lovelace portrait">
+				<div class="col-6 col-lg-4">
+					<h4 class="m-0">Ada Lovelace</h4>
 				</div>
-				<div class="arrow-right-con">
-					<img id="arrow-right" src="./FCC-TPAssets/FCC-TPMedia/arrow_right.png" alt="arrow right">
+				<button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="border-top d-block d-lg-none my-3"></div>
+					<div class="col">
+						<a class="nav-link m-0" href="#">ABOUT</a>
+					</div>
 				</div>
 			</div>
-			<div class="caption">
-				<h3 id="img-caption">" The First Computer Programmers "</h3>
+		</nav>
+
+		<div class="container">
+			<div id="carouselExampleAutoplaying" class="carousel carousel-dark slide carousel-fade my-5"
+				data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./FCC-TPAssets/FCC-TPMedia/ada-1.png"
+							class="d-block m-auto img-fluid bg-dark border border-5 rounded-circle" alt="image1">
+					</div>
+					<div class="carousel-item">
+						<img src="./FCC-TPAssets/FCC-TPMedia/ada-2.png"
+							class="d-block m-auto img-fluid bg-dark border border-5  rounded-circle" alt="image2">
+					</div>
+					<div class="carousel-item">
+						<img src="./FCC-TPAssets/FCC-TPMedia/ada-3.png"
+							class="d-block m-auto img-fluid bg-dark border border-5  rounded-circle" alt="image3">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<div class="text-center">
+				<h5>" The First Computer Programmers "</h5>
 				<hr>
-				<h6>The Right Honourable</h6>
+				<h6 class="text-muted">The Right Honourable</h6>
 			</div>
-		</figure>
-		
-		<div id="tribute-info">
-			<h1 class="tribute-info-title">Biography</h1>
-			<div class="fieldsets">
-				<div class="details-fields">
-					<fieldset class="fields">
-						<legend>EDUCATION</legend>
-						<p>Analyst (& Metaphysician), Numbers of Bernoulli, Differential Calculus</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>NAME</legend>
-						<p>Ada Lovelace</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>SPOUSE</legend>
-						<p>William King-Noel, 1st Earl of Lovelace</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>OCCUPATION</legend>
-						<p>Mathematician, Software Developer, Writer, Computer Scientist</p>
-					</fieldset>
-				</div>
-				<div class="details-fields">
-					<fieldset class="fields">
-						<legend>BIRTH DATE</legend>
-						<p>December 10, 1815</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>PLACE OF BIRTH</legend>
-						<p>London, United Kingdom</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>DEATH DATE</legend>
-						<p>November 27, 1852</p>
-					</fieldset>
-					<fieldset class="fields">
-						<legend>PLACE OF DEATH</legend>
-						<p>Marylebone, London, United Kingdom</p>
-					</fieldset>
+		</div>
+
+		<div class="container text-center mt-5">
+
+			<div class="container d-flex flex-column border rounded shadow-sm p-0">
+				<h3 class="m-0 py-2 p-0 border-bottom">Biography</h3>
+				<div class="container d-flex flex-md-row flex-column justify-content-evenly align-items-center p-3">
+					<div
+						class="col-12 col-md-5 d-flex flex-column justify-content-between align-items-center align-self-stretch mb-md-0">
+						<div class="col-12 d-flex flex-column border rounded p-2">
+							<h6 class="m-0">EDUCATION</h6>
+							<p class="m-0">Analyst (& Metaphysician), Numbers of Bernoulli, Differential Calculus</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">NAME</h6>
+							<p class="m-0">Ada Lovelace</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">SPOUSE</h6>
+							<p class="m-0">William King-Noel, 1st Earl of Lovelace</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">OCCUPATION</h6>
+							<p class="m-0">Mathematician, Software Developer, Writer, Computer Scientist</p>
+						</div>
+					</div>
+					<div
+						class="col-12 col-md-5 d-flex flex-column justify-content-between align-items-center align-self-stretch mb-md-0">
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2 mt-md-0">
+							<h6 class="m-0">BIRTH DATE</h6>
+							<p class="m-0">December 10, 1815</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">PLACE OF BIRTH</h6>
+							<p class="m-0">London, United Kingdom</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">DEATH DATE</h6>
+							<p class="m-0">November 27, 1852</p>
+						</div>
+						<div class="col-12 d-flex flex-column border rounded p-2 mt-2">
+							<h6 class="m-0">PLACE OF DEATH</h6>
+							<p class="m-0">Marylebone, London, United Kingdom</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="infos">
-				<h2 class="infos-head">The Countess of Lovelace</h2>
-				<p class="tribute-info-p">Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first computer programmer. The young girl was brought up by her maternal grandmother and servants. Her grandmother died when Ada was just seven years old, and Ada herself suffered long spells of poor health in both childhood and later. One thing her mother insisted upon was that Ada should get a high quality education. She developed the design for a flying machine when she was only 13 years old. She was educated by tutors, including Mary Somerville, for whom she had a great amount of respect and with whom she corresponded many years. Mary Somerville was the one who introduced her to Charles Babbage.</p>
-				<p class="tribute-info-p"> Ada Lovelace discovered that a computer could follow a sequence of instructions—that is, a program. About a century before Konrad Zuse designed the first programmable computing machine, in the 1840s, Ada Lovelace wrote the first computer programme in the world. From a modern perspective, her work is visionary. She also added thousands of words of her own notes to the paper. Lovelace realized that the Analytical Engine could carry out an extensive sequence of mathematical operations. The example she wrote of one such sequence—how to calculate Bernoulli numbers—is regarded by computer historians as the first computer program.</p>
-				<p class="tribute-info-p">In 1835, Lovelace married William King, who became the Earl of Lovelace three years later. She then took the title of Countess of Lovelace. They shared a love of horses and had three children together. From most accounts, he supported his wife's academic endeavors. Lovelace and her husband socialized with many of the interesting minds of the times, including scientist Michael Faraday and writer Charles Dickens.</p>
-				<p class="tribute-info-p">Lovelace's health suffered, however, after a bout of cholera in 1837. She had lingering problems with asthma and her digestive system. Doctors gave her painkillers, such as laudanum and opium, and her personality began to change. She reportedly experienced mood swings and hallucinations.</p>
+
+			<div class="container my-5">
+				<h3>The Countess of Lovelace</h3>
+				<p>Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November
+					1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed
+					mechanical general-purpose computer, the Analytical Engine. She was the first to recognise that the machine
+					had applications beyond pure calculation, and to have published the first algorithm intended to be carried out
+					by such a machine. As a result, she is often regarded as the first computer programmer. The young girl was
+					brought up by her maternal grandmother and servants. Her grandmother died when Ada was just seven years old,
+					and Ada herself suffered long spells of poor health in both childhood and later. One thing her mother insisted
+					upon was that Ada should get a high quality education. She developed the design for a flying machine when she
+					was only 13 years old. She was educated by tutors, including Mary Somerville, for whom she had a great amount
+					of respect and with whom she corresponded many years. Mary Somerville was the one who introduced her to
+					Charles Babbage.</p>
+				<p> Ada Lovelace discovered that a computer could follow a sequence of instructions—that
+					is, a program. About a century before Konrad Zuse designed the first programmable computing machine, in the
+					1840s, Ada Lovelace wrote the first computer programme in the world. From a modern perspective, her work is
+					visionary. She also added thousands of words of her own notes to the paper. Lovelace realized that the
+					Analytical Engine could carry out an extensive sequence of mathematical operations. The example she wrote of
+					one such sequence—how to calculate Bernoulli numbers—is regarded by computer historians as the first computer
+					program.</p>
+				<p>In 1835, Lovelace married William King, who became the Earl of Lovelace three years
+					later. She then took the title of Countess of Lovelace. They shared a love of horses and had three children
+					together. From most accounts, he supported his wife's academic endeavors. Lovelace and her husband socialized
+					with many of the interesting minds of the times, including scientist Michael Faraday and writer Charles
+					Dickens.</p>
+				<p>Lovelace's health suffered, however, after a bout of cholera in 1837. She had
+					lingering problems with asthma and her digestive system. Doctors gave her painkillers, such as laudanum and
+					opium, and her personality began to change. She reportedly experienced mood swings and hallucinations.</p>
 			</div>
 
-			<div class="tribute-info-col">
-				<h3 class="ada-quote">“The more I study, the more insatiable do I feel my genius for it to be.”</h3>
-				<h4 class="signature">Ada Lovelace,</h4>
-				<img src="./FCC-TPAssets/FCC-TPMedia/signature.png" alt="" class="signature-img">
-				<p class="more-link">To know more about Ada Lovelace, Just click 
-					<a id="tribute-link" href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank"> Here.</a>
+			<div class="container">
+				<h5>“The more I study, the more insatiable do I feel my genius for it to be.”</h5>
+				<h6 class="text-muted">Ada Lovelace,</h6>
+				<div class="container-fluid p-md-5 py-3">
+					<img src="./FCC-TPAssets/FCC-TPMedia/signature.png" alt="signature" class="img-fluid">
+				</div>
+				<p class="text-muted">To know more about Ada Lovelace, Just click
+					<a href="https://www.wikiwand.com/en/Ada_Lovelace" target="_blank"> Here.</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	
-	<script src="./FCC-TPAssets/FCC-TPMainJS/main.js"></script>
-	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+
+	<!-- bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+		integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+		integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
